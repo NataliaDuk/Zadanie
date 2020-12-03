@@ -6,20 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type="text/css">
+        :root {
+            --img-size: 600px;
+        }
+
+        body {
+            background-color: rgb(174, 199, 199);
+        }
+
         .gallery img {
-            width: 300px;
-            height: 300px;
-            border: 10px red double;
+            transition: 1s;
+            width: 200px;
+            filter: grayscale(100%);
+            text-align: center;
+            border: 10px rgb(92, 90, 5) double;
+        }
+
+        .gallery img:hover {
+
+            filter: drop-shadow(16px 16px 20px blue);
+
+            transform: rotate3d(1, 1, 1, 45deg);
+
+        }
+
+        .gallery {
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div class="gallery">
         <img src="ded_moroz.jpg" alt="">
+
         <img src="elka.jpg" alt="">
+
         <img src="miki.jpg" alt="">
+
         <img src="miki2.jpg" alt="">
+
         <img src="miki3.jpg" alt="">
     </div>
 </body>
